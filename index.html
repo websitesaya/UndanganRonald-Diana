@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan – Ronald &amp; Diana</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Great+Vibes&family=Jost:wght@200;300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================================================================
+     COVER PAGE
+     ================================================================ -->
+  <div id="cover">
+    <div class="cover-bg"></div>
+    <div class="cover-frame"></div>
+
+    <!-- Floating Petals -->
+    <div class="petal" style="left:5%;width:8px;height:14px;animation-duration:12s;animation-delay:0s;"></div>
+    <div class="petal" style="left:15%;width:5px;height:10px;animation-duration:9s;animation-delay:2s;"></div>
+    <div class="petal" style="left:75%;width:8px;height:14px;animation-duration:14s;animation-delay:1s;"></div>
+    <div class="petal" style="left:85%;width:6px;height:12px;animation-duration:10s;animation-delay:3s;"></div>
+    <div class="petal" style="left:45%;width:4px;height:8px;animation-duration:11s;animation-delay:4s;"></div>
+    <div class="petal" style="left:60%;width:7px;height:13px;animation-duration:8s;animation-delay:1.5s;"></div>
+    <div class="petal" style="left:30%;width:5px;height:10px;animation-duration:13s;animation-delay:2.5s;"></div>
+    <div class="petal" style="left:90%;width:6px;height:11px;animation-duration:10.5s;animation-delay:0.8s;"></div>
+
+    <!-- Ornament SVG -->
+    <svg class="cover-ornament" viewBox="0 0 220 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M110 5 C90 5,65 15,55 29 C45 43,45 56,55 58" stroke="#C9A96E" stroke-width=".6" fill="none"
+        opacity=".5" />
+      <path d="M110 5 C130 5,155 15,165 29 C175 43,175 56,165 58" stroke="#C9A96E" stroke-width=".6" fill="none"
+        opacity=".5" />
+      <circle cx="110" cy="5" r="3" fill="#C9A96E" opacity=".6" />
+      <path d="M15 30 L205 30" stroke="#C9A96E" stroke-width=".3" opacity=".2" />
+      <circle cx="15" cy="30" r="2" fill="#C9A96E" opacity=".22" />
+      <circle cx="205" cy="30" r="2" fill="#C9A96E" opacity=".22" />
+      <path d="M65 40 Q78 32,90 40 Q100 50,110 40 Q120 32,132 40 Q144 50,155 40" stroke="#C9A96E" stroke-width=".5"
+        fill="none" opacity=".38" />
+      <path d="M85 52 C93 44,100 49,110 45 C120 49,127 44,135 52" stroke="#C9A96E" stroke-width=".5" fill="none"
+        opacity=".38" />
+    </svg>
+
+    <p class="cover-eyebrow">Undangan Pernikahan</p>
+    <h1 class="cover-h1">Ronald <span class="amp">&amp;</span> Diana</h1>
+    <div class="cover-rule">
+      <div class="cover-diamond"></div>
+    </div>
+    <p class="cover-date">Sabtu, 21 Maret 2026</p>
+    <p class="cover-to">Kepada Yth.</p>
+    <p class="cover-guest" id="guest-name">Tamu Undangan</p>
+
+    <button class="open-btn" onclick="openInvitation()">
+      <span>✉&nbsp;&nbsp;Buka Undangan</span>
+    </button>
+  </div>
+
+
+  <!-- ================================================================
+     MAIN CONTENT
+     ================================================================ -->
+  <div id="main">
+
+    <!-- ── 1. HERO ───────────────────────────────────────────── -->
+    <section id="hero">
+      <div class="hero-watermark">Together</div>
+
+      <!-- Floral Left -->
+      <svg class="floral floral-l" viewBox="0 0 255 555" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M128 548 C128 548,93 466,73 384 C53 302,63 234,93 181 C123 128,130 88,123 46" stroke="#8A9B7A"
+          stroke-width="2" fill="none" />
+        <path d="M113 376 C88 354,55 344,44 314 C66 320,88 337,110 357 Z" fill="#8A9B7A" opacity=".55" />
+        <path d="M122 291 C109 264,132 240,148 230 C144 250,134 272,128 292 Z" fill="#C9A96E" opacity=".45" />
+        <path d="M96 226 C70 218,50 201,44 178 C65 188,86 205,100 226 Z" fill="#8A9B7A" opacity=".45" />
+        <circle cx="120" cy="62" r="12" fill="#E8C4B8" opacity=".55" />
+        <circle cx="108" cy="76" r="8" fill="#C9A96E" opacity=".32" />
+        <circle cx="134" cy="70" r="9" fill="#E8D5A3" opacity=".38" />
+        <path d="M93 146 C80 132,60 127,53 109 C72 115,90 127,98 147 Z" fill="#8A9B7A" opacity=".4" />
+        <path d="M138 172 C148 155,166 148,176 132 C160 137,146 152,140 172 Z" fill="#8A9B7A" opacity=".35" />
+      </svg>
+
+      <!-- Floral Right (mirror) -->
+      <svg class="floral floral-r" viewBox="0 0 255 555" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M128 548 C128 548,93 466,73 384 C53 302,63 234,93 181 C123 128,130 88,123 46" stroke="#8A9B7A"
+          stroke-width="2" fill="none" />
+        <path d="M113 376 C88 354,55 344,44 314 C66 320,88 337,110 357 Z" fill="#8A9B7A" opacity=".55" />
+        <path d="M122 291 C109 264,132 240,148 230 C144 250,134 272,128 292 Z" fill="#C9A96E" opacity=".45" />
+        <path d="M96 226 C70 218,50 201,44 178 C65 188,86 205,100 226 Z" fill="#8A9B7A" opacity=".45" />
+        <circle cx="120" cy="62" r="12" fill="#E8C4B8" opacity=".55" />
+        <circle cx="108" cy="76" r="8" fill="#C9A96E" opacity=".32" />
+        <circle cx="134" cy="70" r="9" fill="#E8D5A3" opacity=".38" />
+        <path d="M93 146 C80 132,60 127,53 109 C72 115,90 127,98 147 Z" fill="#8A9B7A" opacity=".4" />
+        <path d="M138 172 C148 155,166 148,176 132 C160 137,146 152,140 172 Z" fill="#8A9B7A" opacity=".35" />
+      </svg>
+
+      <div class="hero-inner reveal">
+        <p class="Syalom">Dalam Nama Tuhan Yesus Kristus</p>
+        <p class="hero-label">Dengan Penuh Kebahagiaan Kami Mengundang</p>
+        <div class="hero-names">
+          Ronald
+          <span class="hero-and">&amp;</span>
+          Diana
+        </div>
+        <div class="date-badge">
+          <span class="db-day">Sabtu</span>
+          <span class="db-num">15</span>
+          <span class="db-month">Maret 2026</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── 2. COUPLE ─────────────────────────────────────────── -->
+    <section id="couple">
+      <p class="eyebrow reveal">Mempelai</p>
+      <h2 class="section-title reveal" style="color:var(--cream)">Yang Berbahagia</h2>
+      <div class="sep reveal"><span class="sep-icon">✦</span></div>
+
+      <div class="couple-grid">
+        <!-- Mempelai Pria -->
+        <div class="couple-card reveal-l">
+          <div class="cp-photo">
+            <img src="mempelai pria.jpg" alt="Ronald">
+          </div>
+          <h3 class="cp-name">Ronald</h3>
+          <p class="cp-full">Ronald PRATAMA</p>
+          <p class="cp-parents">
+            Putra pertama dari<br>
+            <strong>Bpk. Hendra Wijaya</strong><br>
+            &amp; <strong>Ibu Sari Dewi</strong>
+          </p>
+        </div>
+
+        <!-- Pemisah & -->
+        <div class="couple-mid reveal">
+          <div class="couple-mid-line"></div>
+          <span class="couple-mid-and">&amp;</span>
+          <div class="couple-mid-line"></div>
+        </div>
+
+        <!-- Mempelai Wanita -->
+        <div class="couple-card reveal-r">
+          <div class="cp-photo">
+            <img src="mempelai wanita.jpg" alt="Diana">
+          </div>
+          <h3 class="cp-name">Diana</h3>
+          <p class="cp-full">DIANA PERMATA, S.E.</p>
+          <p class="cp-parents">
+            Putri pertama dari<br>
+            <strong>Bpk. Ahmad Fauzi</strong><br>
+            &amp; <strong>Ibu Nurul Hidayah</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── 3. QUR'AN QUOTE ───────────────────────────────────── -->
+    <section id="quote">
+      <div class="quote-wrap reveal">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">
+          "Sebab itu seorang laki-laki akan meninggalkan ayahnya dan ibunya
+          dan bersatu dengan istrinya, sehingga keduanya menjadi satu daging."
+        </p>
+        <p class="quote-src">Kejadian 2:24</p>
+      </div>
+    </section>
+
+
+    <!-- ── 4. EVENTS ─────────────────────────────────────────── -->
+    <section id="event">
+      <p class="eyebrow reveal">Rangkaian Acara</p>
+      <h2 class="section-title reveal" style="color:var(--brown)">Hari Istimewa</h2>
+      <div class="sep reveal"><span class="sep-icon">✦</span></div>
+
+      <div class="event-cards">
+        <!-- Akad Nikah -->
+        <div class="ev-card reveal-l">
+          <p class="ev-tag">Akad Nikah</p>
+          <div class="ev-icon">⛪</div>
+          <h3 class="ev-name">Akad Nikah</h3>
+          <div class="ev-info">
+            <strong>Sabtu, 21 Maret 2026</strong>
+            08.00 – 10.00 WIB
+          </div>
+          <div class="ev-sep"></div>
+          <p class="ev-loc">Gereja Kristen Setya Indonesia<br>Jl. Merdeka No. 12, Jakarta Selatan</p>
+          <a class="ev-map" href="https://maps.google.com" target="_blank">📍 Lihat Lokasi</a>
+        </div>
+
+        <!-- Resepsi -->
+        <div class="ev-card reveal-r">
+          <p class="ev-tag">Resepsi</p>
+          <div class="ev-icon">🥂</div>
+          <h3 class="ev-name">Resepsi</h3>
+          <div class="ev-info">
+            <strong>Sabtu, 21 Maret 2026</strong>
+            11.00 – 15.00 WIB
+          </div>
+          <div class="ev-sep"></div>
+          <p class="ev-loc">Gedung Serbaguna Graha Indah<br>Jl. Gatot Subroto No. 88, Jakarta</p>
+          <a class="ev-map" href="https://maps.google.com" target="_blank">📍 Lihat Lokasi</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── 5. COUNTDOWN ──────────────────────────────────────── -->
+    <section id="countdown">
+      <h2 class="cd-title reveal">Menuju Hari Bahagia</h2>
+      <p class="cd-sub reveal">Hitung Mundur</p>
+      <div class="cd-grid reveal">
+        <div class="cd-item">
+          <span class="cd-num" id="cd-days">00</span>
+          <span class="cd-lbl">Hari</span>
+        </div>
+        <span class="cd-colon">:</span>
+        <div class="cd-item">
+          <span class="cd-num" id="cd-hours">00</span>
+          <span class="cd-lbl">Jam</span>
+        </div>
+        <span class="cd-colon">:</span>
+        <div class="cd-item">
+          <span class="cd-num" id="cd-mins">00</span>
+          <span class="cd-lbl">Menit</span>
+        </div>
+        <span class="cd-colon">:</span>
+        <div class="cd-item">
+          <span class="cd-num" id="cd-secs">00</span>
+          <span class="cd-lbl">Detik</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── 6. OUR STORY ──────────────────────────────────────── -->
+    <section id="story">
+      <p class="eyebrow reveal">Perjalanan Kami</p>
+      <h2 class="section-title reveal" style="color:var(--brown)">Love Story</h2>
+      <div class="sep reveal"><span class="sep-icon">✦</span></div>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <p class="tl-yr">2019</p>
+            <h4 class="tl-ev">Pertama Bertemu</h4>
+            <p class="tl-desc">Takdir mempertemukan kami di sebuah seminar kampus yang penuh inspirasi.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <p class="tl-yr">2020</p>
+            <h4 class="tl-ev">Mulai Berteman</h4>
+            <p class="tl-desc">Dari perkenalan biasa tumbuh persahabatan yang hangat dan tulus di antara kami.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <p class="tl-yr">2022</p>
+            <h4 class="tl-ev">Resmi Berpacaran</h4>
+            <p class="tl-desc">Perasaan yang selama ini tersimpan akhirnya terucap dengan penuh keberanian.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <p class="tl-yr">2024</p>
+            <h4 class="tl-ev">Lamaran</h4>
+            <p class="tl-desc">Dengan restu kedua keluarga, kami resmi bertunangan di bulan September.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <p class="tl-yr">2026</p>
+            <h4 class="tl-ev">Menuju Pernikahan</h4>
+            <p class="tl-desc">Hari yang paling kami tunggu — menyatukan dua jiwa dalam ikatan suci.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── 7. GALLERY ────────────────────────────────────────── -->
+    <section id="gallery">
+      <p class="eyebrow reveal">Foto Bersama</p>
+      <h2 class="section-title reveal" style="color:var(--cream)">Galeri Kenangan</h2>
+      <div class="sep reveal"><span class="sep-icon">✦</span></div>
+
+      <div class="gallery-grid reveal">
+        <div class="g-item tall" onclick="openLightbox(0)">
+          <img src="Foto1.jpg" alt="Foto 1">
+        </div>
+        <div class="g-item" onclick="openLightbox(1)">
+          <img src="Foto2.jpg" alt="Foto 2">
+        </div>
+        <div class="g-item" onclick="openLightbox(2)">
+          <img src="Foto3.jpg" alt="Foto 3">
+        </div>
+        <div class="g-item" onclick="openLightbox(3)">
+          <img src="Foto4.jpg" alt="Foto 4">
+        </div>
+        <div class="g-item" onclick="openLightbox(4)">
+          <img src="Foto5.jpg" alt="Foto 5">
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" onclick="closeLightbox()">
+        <button class="lb-close" onclick="closeLightbox()">✕</button>
+        <button class="lb-prev" onclick="event.stopPropagation(); moveLightbox(-1)">&#8592;</button>
+        <div class="lb-img-wrap">
+          <img id="lb-img" src="" alt="">
+          <p id="lb-caption"></p>
+        </div>
+        <button class="lb-next" onclick="event.stopPropagation(); moveLightbox(1)">&#8594;</button>
+      </div>
+    </section>
+
+    <!-- ── 8. WISHES / RSVP ──────────────────────────────────── -->
+    <section id="wishes">
+      <p class="eyebrow reveal">Konfirmasi &amp; Ucapan</p>
+      <h2 class="section-title reveal" style="color:var(--cream)">Kirim Doa</h2>
+      <div class="sep reveal"><span class="sep-icon">✦</span></div>
+
+      <div class="wish-form reveal">
+        <div class="f-group">
+          <input class="f-input" id="wish-name" type="text" placeholder="Nama Anda ...">
+        </div>
+        <div class="attend-row">
+          <div class="att-opt sel" onclick="selectAtt(this,'hadir')">✓ Hadir</div>
+          <div class="att-opt" onclick="selectAtt(this,'maaf')">✗ Tidak Hadir</div>
+          <div class="att-opt" onclick="selectAtt(this,'ragu')">? Masih Ragu</div>
+        </div>
+        <div class="f-group">
+          <textarea class="f-textarea" id="wish-msg" placeholder="Tulis ucapan &amp; doa ..."></textarea>
+        </div>
+        <button class="sub-btn" onclick="submitWish()">Kirim Ucapan ✦</button>
+      </div>
+
+      <div class="wish-list reveal" id="wish-list">
+      </div>
+    </section>
+
+
+    <!-- ── 9. GIFT / REKENING ────────────────────────────────── -->
+    <section id="gift">
+      <p class="eyebrow reveal">Hadiah Pernikahan</p>
+      <h2 class="section-title reveal" style="color:var(--brown)">Wedding Gift</h2>
+      <div class="sep reveal"><span class="sep-icon">✦</span></div>
+      <p class="reveal"
+        style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--brown);opacity:.6;text-align:center;max-width:420px;margin-top:-8px;">
+        Doa dan kehadiran Anda adalah hadiah terbaik. Namun bagi yang ingin memberi, berikut informasinya:
+      </p>
+
+      <div class="gift-cards">
+        <div class="gift-card reveal-l">
+          <p class="gc-bank">BCA</p>
+          <p class="gc-num">**************</p>
+          <p class="gc-name">a.n. Ronald Pratama</p>
+          <button class="copy-btn" onclick="copyText('123456789012','BCA')">Salin Nomor</button>
+        </div>
+        <div class="gift-card reveal-r">
+          <p class="gc-bank">Mandiri</p>
+          <p class="gc-num">**************</p>
+          <p class="gc-name">a.n. Diana Permata</p>
+          <button class="copy-btn" onclick="copyText('987654321098','Mandiri')">Salin Nomor</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── 10. CLOSING ───────────────────────────────────────── -->
+    <section id="closing">
+      <div class="closing-inner reveal">
+        <p class="cl-tag">Terima Kasih</p>
+
+        <svg viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+          style="width:150px;margin-bottom:18px;">
+          <path d="M100 5 C80 5,60 15,50 27 C40 39,40 47,50 49" stroke="#C9A96E" stroke-width=".6" fill="none"
+            opacity=".42" />
+          <path d="M100 5 C120 5,140 15,150 27 C160 39,160 47,150 49" stroke="#C9A96E" stroke-width=".6" fill="none"
+            opacity=".42" />
+          <circle cx="100" cy="5" r="2.5" fill="#C9A96E" opacity=".6" />
+          <path d="M18 27 L182 27" stroke="#C9A96E" stroke-width=".3" opacity=".16" />
+        </svg>
+
+        <h2 class="cl-names">Ronald <span class="amp">&amp;</span> Diana</h2>
+        <p class="cl-msg">
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan
+          doa restu dalam hari bahagia kami.
+        </p>
+        <p class="cl-date">Sabtu, 21 Maret 2026</p>
+        <p class="cl-hash">#RonaldDiana2026</p>
+
+        <div class="sep" style="margin-top:28px;"><span class="sep-icon">✦</span></div>
+        <p
+          style="font-family:'Jost',sans-serif;font-weight:200;font-size:12px;letter-spacing:2px;color:rgba(255,255,255,.32);text-align:center;">
+          Syalom Tuhan Yesus Memberkati
+        </p>
+      </div>
+    </section>
+
+    <footer style="background:#0D0A07;padding:32px 20px;text-align:center;">
+      <p
+        style="font-family:'Jost',sans-serif;font-weight:300;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,.6);">
+        Made with ♥ — Undangan Digital Ronald &amp; Diana 2026
+      </p>
+      <p
+        style="font-family:'Jost',sans-serif;font-weight:300;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,.6);margin-top:6px;">
+        Design by <strong style="color:#C9A96E;font-weight:400;letter-spacing:1px;">Zhald Developer</strong>
+      </p>
+
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px;margin-top:20px;">
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/rijald_elimanafe" target="_blank" style="width:40px;height:40px;border:1px solid #C9A96E;border-radius:50%;
+              display:flex;align-items:center;justify-content:center;text-decoration:none;
+              background:transparent;transition:background .3s;"
+          onmouseover="this.style.background='rgba(201,169,110,.2)'" onmouseout="this.style.background='transparent'">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="5" />
+            <circle cx="17.5" cy="6.5" r="1" fill="#C9A96E" stroke="none" />
+          </svg>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6281338596854" target="_blank" style="width:40px;height:40px;border:1px solid #C9A96E;border-radius:50%;
+              display:flex;align-items:center;justify-content:center;text-decoration:none;
+              background:transparent;transition:background .3s;"
+          onmouseover="this.style.background='rgba(201,169,110,.2)'" onmouseout="this.style.background='transparent'">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" stroke-width="2">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+          </svg>
+        </a>
+
+      </div>
+
+      <p
+        style="font-family:'Jost',sans-serif;font-weight:200;font-size:10px;letter-spacing:2px;color:rgba(255,255,255,.35);margin-top:16px;">
+        © 2026 Zhald Developer
+      </p>
+    </footer>
+  </div>
+
+
+  <!-- Tombol Musik -->
+  <button id="music-btn" title="Toggle Musik">
+    <span class="music-icon">🎵</span>
+  </button>
+
+  <!-- Audio Background -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="Westlife - Beautiful in white (Lyrics).mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- JavaScript (diletakkan sebelum </body> agar DOM sudah siap) -->
+  <script src="script.js"></script>
+</body>
+
+</html>
